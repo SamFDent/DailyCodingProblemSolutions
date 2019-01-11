@@ -15,7 +15,7 @@ for num in numbers:
 		if foundnumind == 1:
 			break
 		elif num + numbers[loop] == 17:
-			print('Target Number Found!')
+			print('Target Number Found! ' + str(num) + ' and ' + str(numbers[loop]) = ' make 17')
 			foundnumind = 1
 			break
 		else:
