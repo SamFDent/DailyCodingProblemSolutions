@@ -8,10 +8,15 @@ If our input was [3, 2, 1], the expected output would be [2, 3, 6].
 
 import numpy
 
+def prodNums(num_list):
+	newnums=[]
+	for num in num_list:
+		x = numpy.prod(num_list)/num
+		newnums.append(x)
+		return newnums
+
+
 nums = [1,2,3,4,5]
-newnums = []
-for i in nums:
-	x = numpy.prod(nums)/i
-	newnums.append(x)
+result = prodNums(nums)
 	
-print(newnums)
+print(result)
